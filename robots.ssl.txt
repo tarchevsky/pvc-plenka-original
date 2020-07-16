@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /404
+Disallow: /enter/
+Disallow: /user/
+Disallow: /captcha/
+Disallow: /templates/
+Disallow: /compiled/
+Disallow: /resize/
