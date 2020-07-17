@@ -13,11 +13,14 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
     padding: 0;
-    list-style-type: none
+    list-style-type: none;
 }
 
 .container:after, ul:after {
@@ -77,12 +80,19 @@ tr td:last-child {
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2)
 }
 
+.adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .wrapper-bottom {
+    width: 100%;
     margin-top: 30px;
-    min-width: 1100px;
+    /* min-width: 1100px; */
     padding-top: 20px;
     background-color: #000;
-    height: 95px
+    height: 95px;
 }
 
 .toptop {
@@ -170,7 +180,7 @@ tr td:last-child {
 .block-logo {
     float: left;
     width: 180px;
-    margin-right: 90px
+    /* margin-right: 90px */
 }
 
 .block-logo img {
@@ -178,36 +188,38 @@ tr td:last-child {
 }
 
 .block-online {
-    float: right;
-    width: 220px;
-    padding-top: 22px;
+    /* float: right;
+    width: 220px; */
+    /* padding-top: 22px; */
     font-size: 13px;
     color: #ed6363
 }
 
 .block-phone {
-    float: right;
-    width: 180px;
+    /* float: right;
+    width: 180px; */
     padding-top: 16px;
-    font-size: 22px;
+    font-size: 0.16;
     color: #ed6363
 }
 
 .block-menu {
     width: 650px;
-    height: 90px;
-    padding-top: 5px
+    /* height: 90px; */
+    /* padding-top: 5px */
 }
 
 .block-menu ul {
-    text-align: center;
-    margin-top: 10px
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    /* margin-top: 10px */
 }
 
 .block-menu ul li {
     display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 10px
+    margin: 0 auto;
+    /* margin-bottom: 10px */
 }
 
 .block-menu ul li a {
@@ -301,7 +313,6 @@ h1 {
     min-width: 1100px;
     margin-top: 130px
 }
-
 .wrapper-text-full .container {
     width: 1110px
 }
@@ -311,8 +322,10 @@ h1 {
 }
 
 .wrapper-text {
-    min-width: 1100px;
-    padding-bottom: 30px
+    max-width: 1100px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .wrapper-text p {
@@ -360,7 +373,7 @@ h1 {
 }
 
 .cat-main li {
-	height: 409px;
+	height: 420px;
 }
 
 .col-prod li {
