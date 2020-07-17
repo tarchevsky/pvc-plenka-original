@@ -7,7 +7,13 @@
 body {
     font-family: 'FedraSansPro', sans-serif;
     font-weight: 400;
-    min-width: 1200px
+    margin: 0;
+}
+
+*,
+*:before;
+*:after {
+    box-sizing: border-box;
 }
 
 .container {
@@ -87,12 +93,24 @@ tr td:last-child {
 }
 
 .wrapper-bottom {
-    width: 100%;
+    /* width: 100%;
     margin-top: 30px;
-    /* min-width: 1100px; */
+    min-width: 1100px;
     padding-top: 20px;
     background-color: #000;
-    height: 95px;
+    height: 95px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    min-width: 1100px;
+    padding-top: 18px;
+    background-color: #000;
+    height: 90px;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2)
 }
 
 .toptop {
@@ -174,7 +192,7 @@ tr td:last-child {
 }
 
 .banner-list img {
-    width: 100%
+    width: 100%;
 }
 
 .block-logo {
